@@ -12,6 +12,7 @@ $(document).ready(function(){
   $(".dropdown1").mouseout(function(){
     $(".dropdown1").hide();
   });
+  
   // $('body').css('display', 'none');
   // $('body').fadeIn(1000);
 // $("#chinese").hide();

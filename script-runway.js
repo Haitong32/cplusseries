@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#tag-18AW").css("border-bottom","1px solid red");
   $(".dropdown1").hide();
   $("#collection").click(function(){
     $(".dropdown1").toggle();
@@ -21,47 +22,46 @@ $(document).ready(function(){
               $(".topbar").removeClass('changeColor')
            }
         });
+  $(".img").lazyload({
+    effect: "fadeIn"
 
-  // $("#18AW").hide();
+});
   $("#tag-18AW").click(function(){
+    $(".img").lazyload({effect: "fadeIn"
+      });
     $("#tag-18AW").css("border-bottom","1px solid red");
     $("#tag-18SS").css("border-bottom","none");
     $("#tag-17AW").css("border-bottom","none");
     $("#tag-17SS").css("border-bottom","none");
-    $("#18AW").show();
-    $("#18SS").hide();
-    $("#17AW").hide();
-    $("#17SS").hide();
+    $('html, body').animate({
+          scrollTop: $("#18AW").offset().top
+      });
   });
-  $("#18SS").hide();
   $("#tag-18SS").click(function(){
     $("#tag-18SS").css("border-bottom","1px solid red");
     $("#tag-18AW").css("border-bottom","none");
     $("#tag-17AW").css("border-bottom","none");
     $("#tag-17SS").css("border-bottom","none");
-    $("#18SS").show();
-    $("#18AW").hide();
-    $("#17AW").hide();
-    $("#17SS").hide();
+    $('html, body').animate({
+          scrollTop: $("#18SS").offset().top
+      });
   });
   $("#tag-17AW").click(function(){
     $("#tag-17AW").css("border-bottom","1px solid red");
     $("#tag-18AW").css("border-bottom","none");
     $("#tag-18SS").css("border-bottom","none");
     $("#tag-17SS").css("border-bottom","none");
-    $("#17AW").show();
-    $("#18AW").hide();
-    $("#18SS").hide();
-    $("#17SS").hide();
+    $('html, body').animate({
+          scrollTop: $("#17AW").offset().top
+      });
   });
   $("#tag-17SS").click(function(){
     $("#tag-17SS").css("border-bottom","1px solid red");
     $("#tag-18AW").css("border-bottom","none");
     $("#tag-17AW").css("border-bottom","none");
     $("#tag-18SS").css("border-bottom","none");
-    $("#17SS").show();
-    $("#18AW").hide();
-    $("#18SS").hide();
-    $("#17AW").hide();
+    $('html, body').animate({
+          scrollTop: $("#17SS").offset().top
+      });
   });
 });
