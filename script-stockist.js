@@ -12,7 +12,15 @@ $(document).ready(function(){
   $(".dropdown1").mouseout(function(){
     $(".dropdown1").hide();
   });
-  
+  $(window).scroll(function(){
+           if ($(this).scrollTop() > 15) {
+              $(".topbar").addClass('changeColor')
+           }
+           if ($(this).scrollTop() < 10) {
+              $(".topbar").removeClass('changeColor')
+           }
+        });
+
   // $('body').css('display', 'none');
   // $('body').fadeIn(1000);
 // $("#chinese").hide();
