@@ -22,7 +22,7 @@ $(document).ready(function(){
               $(".topbar").removeClass('changeColor')
            }
         });
-  $("img").lazyload({
+  $(".photofeed").lazyload({
     effect: "fadeIn"
 
 });
