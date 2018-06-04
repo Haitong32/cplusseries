@@ -156,7 +156,7 @@ to {opacity: .8;}
   z-index: -480;
   -webkit-animation: opacitychange1 1s;
 }
-img{
+.content img{
   width: 75%;
   margin-left: 10%;
   margin-bottom: 2%;
