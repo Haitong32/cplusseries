@@ -29,7 +29,7 @@
             skip_invisible  : true,
             appear          : null,
             load            : null,
-            placeholder     : null
+            placeholder     : "img/place.png"
         };
 
         function update() {
