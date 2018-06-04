@@ -22,8 +22,8 @@ $(document).ready(function(){
               $(".topbar").removeClass('changeColor')
            }
         });
-  $(".img").lazyload({
-    effect: "fadeIn"
+  // $(".img").lazyload({
+  //   effect: "fadeIn"
 
 });
 });
