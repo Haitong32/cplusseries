@@ -155,6 +155,7 @@ to {opacity: .8;}
   text-align: center;
   padding-top: 10%;
   z-index: -480;
+    -webkit-animation: opacitychange1 1s;
 }
 #maintitle{
   font-size:120%;
