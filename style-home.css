@@ -6,6 +6,7 @@
 }
 body{
 font-family: 'Roboto', sans-serif;
+background-image: none;
 }
 @font-face {
     font-family: 'new_ciclefina';
@@ -225,50 +226,14 @@ body {
   position: relative;
 }
 
-/* .container1, .container2, .container3,
-.container5, .container6, .container8,
-.container9,.container10, .container11,
-.container14,.container15,.container0 {
-  display: flex;
+.mobile{
+  display: none;
 }
-.slider-wrapper1, .slider-wrapper2,
-.slider-wrapper3, .slider-wrapper5,
-.slider-wrapper6, .slider-wrapper8,
-.slider-wrapper9, .slider-wrapper10,
-.slider-wrapper11,.slider-wrapper14,
-.slider-wrapper15,.slider-wrapper0{
-  width: 100%;
-  overflow: hidden;
-}
-.inner-wrapper1, .inner-wrapper2,
-.inner-wrapper3, .inner-wrapper5,
-.inner-wrapper6, .inner-wrapper8,
-.inner-wrapper9, .inner-wrapper10,
-.inner-wrapper11, .inner-wrapper14,
-.inner-wrapper15,.inner-wrapper0{
-  width: 500%;
-  height: 100%;
-  position: relative;
-  left: -100%;
+#homeimg{
+  display: none;
 }
 
-.slide1, .slide2, .slide3, .slide5,
-.slide6, .slide8, .slide9, .slide10,
-.slide11,.slide14,.slide15,.slide0 {
-  width: calc(100% / 5);
-  float: left;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-}
-
-#workinfo0{
-  transform: translateY(-10%);
-} */
-
-
-
-/* @media screen and (max-width: 500px){
+@media screen and (max-width: 500px){
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -282,17 +247,55 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.photofeed{
-    width: 91.66%;
-    display: flex;
-    flex-wrap: wrap;
+.topbar, .taglist, #welcomevideo{
+  display: none;
 }
-.work{
-    width: 91.66%;
-    display: flex;
-    flex-wrap: wrap;
+.mobile{
+  display: inline-flex;
+}
+#logo2{
+  width: 160%;
+  margin-left: -15%;
+}
+#menu{
+  width: 20%;
+}
+.mobiledropdown{
+  z-index: 504;
+  background-color: white;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 0;
+  margin-top: 8%;
+  opacity: 0.8;
+  -webkit-animation: opacitychange3 1.5s;
+}
+.mobiledropdown li{
+  list-style-type:none;
+  list-style-image: url(img/plus2.png);
+  line-height: 2;
+}
+.mobiledropdown a{
+  font-weight: 300;
+  font-size: 80%;
+  color:black;
+  float: left;
+  opacity:1;
+}
+.social2{
+  width: 100%;
+}
+.insta{
+  margin-left: 16.66%;
+  text-align: right;
+}
+#homeimg{
+  display: inline-block;
+  width:100%;
+  position: fixed;
 }
 
 [class*="col-"] {
     display: inline-block;
-} */
+}
+}
